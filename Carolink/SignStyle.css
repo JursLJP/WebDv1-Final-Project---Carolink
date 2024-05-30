@@ -1,0 +1,243 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    max-width: auto;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    color: #58AE24;
+  }
+  
+  .title .logo {
+    width: 400px;
+    height: auto; 
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 20px auto;
+    margin-top: 60px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #abaaaa;
+    box-shadow: 0px 0px 10px rgba(87, 225, 126, 0.1);
+    text-align: left;
+  }
+  
+  .logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 450px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #77CB31;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #77CB31;
+  }
+
+  .p1 {
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-group > div {
+    width: calc(50% - 5px); 
+  }
+  
+  input[type="text"],
+  input[type="email2"],
+  input[type="password2"],
+  input[type="date"],
+  select {
+    width: 175px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  select {
+    width: 380px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .form-group select#gender {
+    width: 196px; 
+  }
+
+  .input-group {
+    display: flex;
+    align-items: center; 
+  }
+
+  input[type="checkbox"] {
+    margin-top: 5px;
+    margin-right: 5px; 
+  } 
+
+  label[for="terms"] {
+    font-size: 14px; /* Adjust the font size of the label */
+    color: #333; /* Adjust the color of the label */    
+    white-space: nowrap;
+  } 
+  
+  .inline-paragraph {
+    font-size: 12px;
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-right: 10px; 
+  }
+  
+  /* Adjusting width for the file input element */
+  .form-group input[type="file"] {
+    width: 380px; 
+  }
+
+  .a1 {
+    color: #42971B;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .a1:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #77CB31;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #42971B;
+  }
+  
+  a {
+    color: #2EC4B6;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      border-radius: 5px;
+      width: 60%;
+      max-width: 600px;
+      position: relative;
+      text-align: justify;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .modal-content p {
+      font-size: 14px;
+      padding-left: 20px;
+    }
+
+    .modal-content ul {
+      list-style-type: none;
+      padding-left: 40px;
+      padding-right: 25px;
+      text-align: justify;
+      font-size: 14px;
+      margin-top: 2px;
+    }
+
+    .pp {
+      padding-left: 30px;
+      padding-right: 20px;
+      text-align: justify;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+
+    .accept-button {
+      display: block;
+      width: 60%;
+      padding: 10px;
+      background-color: #77CB31;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 auto; 
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }    
+    
+    .accept-button:hover {
+      background-color: #42971B;
+    }

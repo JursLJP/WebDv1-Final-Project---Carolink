@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Display</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .post-card {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .post-content {
+            margin-top: 10px;
+        }
+        .post-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .btn-like, .btn-comment {
+            border: none;
+            background: none;
+        }
+        .btn-like img, .btn-comment img {
+            width: 24px;
+            height: 24px;
+        }
+        .btn-like img {
+            margin-right: 5px;
+        }
+        .btn-comment {
+            background-color: #1da1f2;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="post-card shadow-sm">
+            <div class="post-header">
+                <img src="path/to/profile_picture.jpg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <strong>John Doe</strong> <br>
+                    <small class="text-muted">May 29, 2024</small>
+                </div>
+            </div>
+            <div class="post-content">
+                <div class="post-title">Sample Post Title</div>
+                <p>This is the content of the post. It's a sample text to show how the post will look like when displayed to other users.</p>
+            </div>
+            <div class="post-actions">
+                <button class="btn btn-like">
+                    <img src="assets/like (1).png" alt="Like">
+                </button>
+                <button class="btn btn-comment">Comment</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* profile.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, rgba(119, 203, 49, 0.19), #77CB31);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 14px 18px;
+    width: 100%;
+    height: 106px;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    padding-top: 38.8px;
+    width: 321px;
+    height: 92px;
+    box-sizing: border-box;
+}
+
+.carolink-1 {
+    background: url('assets/carolink_1.png') 50% / cover no-repeat;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 250px;
+    height: 70px;
+    display: block;
+}
+
+.usc-log {
+    background: url('assets/usc_log.png') 50% / cover no-repeat;
+    position: absolute;
+    left: 0;
+    top: 2.7px;
+    width: 81px;
+    height: 73.1px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.main-content {
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 106px);
+}
+
+.profile-container {
+    max-width: 33%;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header img.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile-header .hidden {
+    display: none;
+}
+
+#name-inputs input,
+.profile-info input[type="text"],
+.profile-info input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.profile-info .info-item {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.profile-info label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-info button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.profile-info button:hover {
+    background-color: #45a049;
+}
+
+.profile-info .profile-info-button {
+    display: inline-block;
+    margin: 5px;
+}
+
+.profile-info button.hidden {
+    display: none;
+}

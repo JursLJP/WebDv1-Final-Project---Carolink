@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post and Comment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .post-card, .comment-card {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .post-header, .comment-header {
+            display: flex;
+            align-items: center;
+        }
+        .profile-picture {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .post-content, .comment-content {
+            margin-top: 10px;
+        }
+        .post-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .post-actions, .comment-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .btn-like, .btn-comment {
+            border: none;
+            background: none;
+        }
+        .btn-like img, .btn-comment img {
+            width: 24px;
+            height: 24px;
+        }
+        .btn-like img {
+            margin-right: 5px;
+        }
+        .btn-comment {
+            background-color: #1da1f2;
+            color: white;
+            border-radius: 20px;
+            padding: 5px 15px;
+        }
+        .btn-post-comment {
+            border-radius: 20px;
+            background-color: #28a745;
+            color: white;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Original Post -->
+        <div class="post-card shadow-sm">
+            <div class="post-header">
+                <img src="path/to/profile_picture.jpg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <strong>John Doe</strong> <br>
+                    <small class="text-muted">May 29, 2024</small>
+                </div>
+            </div>
+            <div class="post-content">
+                <div class="post-title">Sample Post Title</div>
+                <p>This is the content of the post. It's a sample text to show how the post will look like when displayed to other users.</p>
+            </div>
+            <div class="post-actions">
+                <button class="btn btn-like">
+                    <img src="assets/like (1).png" alt="Like">
+                </button>
+                <button class="btn btn-comment">Comment</button>
+            </div>
+        </div>
+
+        <!-- Create Comment Form -->
+        <div class="comment-card shadow-sm">
+            <h5 class="mb-4">Add a Comment</h5>
+            <form>
+                <div class="form-group">
+                    <textarea class="form-control" id="commentContent" rows="3" placeholder="Write a comment..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-post-comment btn-block">Comment</button>
+            </form>
+        </div>
+
+        <!-- Display Existing Comments -->
+        <div class="comment-card shadow-sm">
+            <div class="comment-header">
+                <img src="path/to/profile_picture.jpg" alt="Profile Picture" class="profile-picture">
+                <div>
+                    <strong>Jane Doe</strong> <br>
+                    <small class="text-muted">May 30, 2024</small>
+                </div>
+            </div>
+            <div class="comment-content">
+                <p>This is a sample comment to show how comments will look under the original post.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

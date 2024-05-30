@@ -1,0 +1,515 @@
+/* user_final.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.user-final .carolink-1 {
+    background: url('assets/carolink_1.png') 50% / cover no-repeat;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 250px;
+    height: 70px;
+    display: block;
+}
+
+.user-final .usc-log {
+    background: url('assets/usc_log.png') 50% / cover no-repeat;
+    position: absolute;
+    left: 0;
+    top: 2.7px;
+    width: 81px;
+    height: 73.1px;
+}
+
+.user-final .logo {
+    position: relative;
+    display: flex;
+    padding-top: 38.8px;
+    width: 321px;
+    height: 92px;
+    box-sizing: border-box;
+}
+
+.user-final .nav-bar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(90deg, rgba(119, 203, 49, 0.19), #77CB31);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 14px 18px;
+    width: 100%;
+    height: 106px;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-final .side-bar {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    background: #D9D9D9;
+    position: fixed;
+    top: 106px;
+    left: 0;
+    width: 370px;
+    height: calc(100% - 106px);
+    box-sizing: border-box;
+    z-index: 500;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Add this to your existing user_final.css file */
+
+.side-bar {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    background: #D9D9D9;
+    position: fixed;
+    top: 106px;
+    left: 0;
+    width: 370px;
+    height: calc(100% - 106px);
+    box-sizing: border-box;
+    z-index: 500;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.icons {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.icons a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
+    padding: 5px;
+    max-width: 90%;
+    box-sizing: border-box;
+    color: #666363;
+}
+
+.icons a img {
+    width: 60px;
+    margin-right: 15px;
+}
+
+.icons a:hover, .icons a.selected {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.search-bar input::placeholder {
+    color: #888;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font: Arial;
+    font-size: 16px;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.search-results {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 1000;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+.search-result-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.search-result-item span {
+    flex: 1;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-name {
+    color: white;
+    text-decoration: underline;
+    font-size: 16px;
+    font: Arial;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logout-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font: Arial;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #45a049;
+}
+
+.home-button {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font: Arial;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    font: Arial;
+}
+
+.main-content {
+    padding: 120px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 370px; /* Adjust for the sidebar width */
+}
+
+.organization-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+}
+
+.organization-logo-large {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.organization-details {
+    flex: 1;
+}
+
+.organization-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.organization-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.posts-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.post {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.organization-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.organization-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: auto;
+}
+
+.post-date {
+    font-size: 12px;
+    color: #888;
+}
+
+.post-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.post-content {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Add this to your existing user_final.css file */
+
+.search-results-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-result-item:hover {
+    background-color: #f0f0f0;
+}
+
+.search-result-item img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.search-result-item span {
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Add this to your existing user_final.css file */
+
+.posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%; /* Match the width of the post container */
+    margin: 5px auto 10px auto; /* Adjust margins to move the header a bit lower */
+    padding-top: 20px; /* Additional padding to move it down */
+}
+
+.posts-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 10px; /* Add margin to move the heading to the right */
+}
+
+.create-post-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font: Arial;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.create-post-button:hover {
+    background-color: #45a049;
+}
+
+.posts-container {
+    width: 85%; /* Match this width to the posts-header width */
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto; /* Center the container */
+}
+
+
+
+
+
+
+
+.user-post-card {
+    max-width: 600px; /* Set fixed width */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: white; /* Fill container with white */
+}
+
+.user-post-header {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-post-content {
+    margin-top: 10px;
+}
+
+.user-post-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-post-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.user-btn-like, .user-btn-comment {
+    border: none;
+    background: none;
+}
+
+.user-btn-like img, .user-btn-comment img {
+    width: 24px;
+    height: 24px;
+}
+
+.user-btn-like img {
+    margin-right: 5px;
+}
+
+.user-btn-comment {
+    background-color: #4CAF50; /* Green color for the comment button */
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+
+
+
+
+/* Adjust button alignment */
+.btn-delete,
+.btn-edit {
+    border: none;
+    background: none;
+    margin-left: 5px;
+    cursor: pointer;
+    
+}
+
+.btn-delete img,
+.btn-edit img {
+    width: 16px;
+    height: 16px;
+}

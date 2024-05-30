@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login • Carolink</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="SignStyle.css">
+</head>
+<body>
+    <div class="title">
+        <img src="images/carolink.png" alt="Logo" class="logo">
+        <p>Communicate, Collaborate, and Connect with fellow Carolinians!</p>
+    </div>
+    <div class="container">
+        <h1>Login</h1>
+        <form id="loginForm" action="login.php" method="POST">
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p class="p1">Don't have an account? <a href="signup.php">Sign up here</a></p>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
